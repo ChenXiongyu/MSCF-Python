@@ -51,7 +51,9 @@ def Fib(n):
 # Part 2
 
 # Define your is_even, is_odd, is_div_by_n, and neg_of functions here
-
+def is_even(n):
+    if type(n) == int:
+        
 # '''Comment this and the following triple-quoted line to test your function
 # print('\n---- Part 2 ----\n')
 # n = 0
