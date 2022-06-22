@@ -24,10 +24,10 @@ def Fib(n):
             n -= 1
         return fib[n - 2]
     except TypeError:
-        # print('Input must be integer.')
+        print('Input must be integer.')
         return None
     except IndexError:
-        # print('Input must be nonnegative integer.')
+        print('Input must be nonnegative integer.')
         return None
 
 
@@ -53,7 +53,36 @@ def Fib(n):
 # Define your is_even, is_odd, is_div_by_n, and neg_of functions here
 def is_even(n):
     if type(n) == int:
+        return n % 2 == 0
+    else:
+        print('Input must be integer.')
+        return None       
         
+
+def is_odd(n):
+    if type(n) == int:
+        return n % 2 != 0
+    else:
+        print('Input must be integer.')
+        return None       
+
+
+def is_div_by_n(m, n):
+    if type(m) == int and type(n) == int:
+        return m % n == 0
+    else:
+        print('Input must be integer.')
+        return None
+    
+    
+def neg_of(x):
+    try:
+        return -x
+    except TypeError:
+        print('Input must be integer or float.')
+        return None
+
+    
 # '''Comment this and the following triple-quoted line to test your function
 # print('\n---- Part 2 ----\n')
 # n = 0
@@ -77,6 +106,21 @@ def is_even(n):
 # Part 3
 
 # Define your sum_of_n and sum_of_n_sqr functions here
+def sum_of_n(n):
+    if type(n) == int and n >= 0:
+        return (1 + n) * n / 2
+    else:
+        print('Input must be nonnegative integer.')
+        return None
+
+
+def sum_of_n_sqr(n):
+    if type(n) == int and n >= 0:
+        return n * (n + 1) * (2 * n + 1) / 6
+    else:
+        print('Input must be nonnegative integer.')
+        return None
+
 
 # '''Comment this and the following triple-quoted line to test your function
 # print('\n---- Part 3 ----\n')
@@ -103,21 +147,21 @@ def is_even(n):
 # print('int(True):',   int(True))
 # print('int(False):',  int(False))
 # print('int("9876"):', int("9876"))
-# print('int("five"):', int("five"))
+# # print('int("five"):', int("five"))  # int("five") causes ValueError
 # print('int(0.123):',  int(0.123))
 # print('int(1230):',   int(1230))
-# print('int(None):',   int(None))
+# # print('int(None):',   int(None))  # int(None) causes TypeError
 # print('\n')
 # print('float(True):',   float(True))
 # print('float(False):',  float(False))
 # print('float("9876"):', float("9876"))
-# print('float("five"):', float("five"))
+# # print('float("five"):', float("five"))  # float("five") causes ValueError
 # print('float(0.123):',  float(0.123))
 # print('float(1230):',   float(1230))
-# print('float(None):',   float(None))
+# # print('float(None):',   float(None))  # float(None) causes TypeError
 # print('\n')
-# print('str(True):',   str(True))
-# print('str(False):',  str(False))
+# print('str(True):',   str(True))  # 'True'
+# print('str(False):',  str(False))  # 'False'
 # print('str("9876"):', str("9876"))
 # print('str("five"):', str("five"))
 # print('str(0.123):',  str(0.123))
@@ -137,4 +181,23 @@ def is_even(n):
 # print('bool(0.0):',    bool(0.0))
 # '''
 
+# Part 5
 
+# I have used IDLE, Spyder and Pycharm. From these three, I prefer using Pycharm. 
+
+# IDLE is the last one I turn to, because it is so simple. It does not contain many useful functions, 
+# such as Git, File Arrangement, etc. It also does not help you correct your code when you are coding. 
+# Therefore, it is not very convenient when you are making a big project. 
+
+# Spyder is closely connected to Anaconda, so it is very convenient to use when Anaconda is installed. 
+# However, Spyder does not support a powerful variable search function. When it comes to a large project, 
+# Spyder cannot help you code more easily and comfortably. 
+
+# Pycharm is a very large and integrated IDE. I love the Console function, which perfectly helps learners 
+# debug their code at the beginning. It also supports a lot of powerful and helpful functions when you are 
+# coding, such as reindexing, etc. 
+
+# I now personally use VSCode, as it has many extension modules you can download. It is like the Google 
+# extension. Some companies are using VSCode, as it is totally open-source. Compared to Pycharm, it will not
+# cause copyright problems. It is developed by Microsoft, so it nicely matches with Microsoft softwares. 
+# Besides, 
