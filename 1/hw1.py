@@ -182,7 +182,7 @@ print('bool(0.0):',    bool(0.0))
 # '''
 
 # Part 5
-
+# Xiongyu Chen:
 # I have used IDLE, Spyder and Pycharm. From these three, I prefer using Pycharm. 
 
 # IDLE is the last one I turn to, because it is so simple. It does not contain many useful functions, 
@@ -201,3 +201,9 @@ print('bool(0.0):',    bool(0.0))
 # extension. Some companies are using VSCode, as it is totally open-source. Compared to Pycharm, it will not
 # cause copyright problems. It is developed by Microsoft, so it nicely matches with Microsoft softwares. 
 # Besides, its software size is small. In a limited storage volume situation, VSCode is suitable. 
+
+# Will Wang: I prefer Jupyter Notebook, Pycharm and VSCode. 
+# I believe many companies are doing development using Jupyter Notebook and VSCode nowadays. 
+# Jupyter is good because we can implement and execute the code very efficiently. 
+# It also works with Numpy and Pandas seamlessly. VSCode is good in the way that it can have many extensions. 
+# So personally, I prefer Jupyter the most, but open to try different IDEs.
