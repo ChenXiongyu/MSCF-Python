@@ -207,3 +207,6 @@ print('bool(0.0):',    bool(0.0))
 # Jupyter is good because we can implement and execute the code very efficiently. 
 # It also works with Numpy and Pandas seamlessly. VSCode is good in the way that it can have many extensions. 
 # So personally, I prefer Jupyter the most, but open to try different IDEs.
+
+# Andrew Yin
+# I like Pycharm as it is more dynamic and convenient for python programming. 
