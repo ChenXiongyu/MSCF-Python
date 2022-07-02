@@ -1,6 +1,7 @@
 
 # File:      hw2_1_a.py
 # Author(s): Xiongyu Chen
+# Date:    [Jul 2, 2022]
 
 expenses = [
     '''Amount:Category:Date:Description''',

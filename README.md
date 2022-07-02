@@ -31,6 +31,26 @@ I will just use quote mark # since I am using an IDE.
 
 Maybe add some try except section to improve robustness of the program.
 
-### 1. b 
+### 1. Formatted Output, File Input, and lists
 
-In the format string '{:8.2f}', 8 always stands for the total length of the string, rather than the length of integral part.
+#### b. Simple Statistics on a list
+
+* In the format string '{:8.2f}', 8 always stands for the total length of the string, rather than the length of integral part.
+
+### 2. list, tuple, set, and dict
+
+#### c. subscript notation
+
+* Watch the assignment order!
+
+#### n. insert
+
+* Pay attention to the arguments in insert function.
+
+#### o. tuple
+
+* Print tuple (4), only showing 4.
+
+#### r. set
+
+* The way to create an empty set is set().
