@@ -26,3 +26,11 @@ I will just use quote mark # since I am using an IDE.
 ### 5. IDE choice
 
 * VSCode > Pycharm > Spyder > IDLE
+
+## Homework 2
+
+Maybe add some try except section to improve robustness of the program.
+
+### 1. b 
+
+In the format string '{:8.2f}', 8 always stands for the total length of the string, rather than the length of integral part.
