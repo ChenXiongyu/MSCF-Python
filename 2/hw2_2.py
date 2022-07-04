@@ -1,7 +1,7 @@
 
-# File:    hw2_2.py
-# Authors: [Xiongyu Chen]
-# Date:    [Jul 2, 2022]
+# File:      hw2_2.py
+# Author(s): xiongyuc, boyuf
+# Date:      Jul 2, 2022
 
 # Part a
 v1 = list(range(1, 7))
