@@ -54,3 +54,15 @@ Maybe add some try except section to improve robustness of the program.
 #### r. set
 
 * The way to create an empty set is set().
+
+## Homework 3
+
+### 2. Collection Construction and Comprehension
+
+#### d. tuple & sort
+
+* The code can be simplified maybe.
+
+#### h. multiple assignment
+
+* Is there a multiple assignment for a dict?

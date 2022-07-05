@@ -4,57 +4,69 @@
 
 # 2.a
 s1 = "Choo Choo Ch'Boogie"
-#print(s1)
+print(s1)
 
 # 2.b
-# ... your code here ...
-#print(m1)
+m1 = list(s1)
+print(m1)
 
 # 2.c
-# ... your code here ...
-#print(set1)
+set1 = set(m1)
+print(set1)
 
 # 2.d
-# ... your code here ...
-#print(t1)
+t1 = list(set1)
+t1.sort()
+t1 = tuple(t1)
+print(t1)
 
 # 2.e
 s2 = "the quick brown fox jumps over the lazy dog"
-#print(s2)
+print(s2)
 
 # 2.f
-# ... your code here ...
-#print(m2)
+m2 = s2.split(' ')
+print(m2)
 
 # 2.g
-# ... your code here ...
-#print(d1)
+d1 = {n + 1: s for n, s in enumerate(m2)}
+print(d1)
 
 # 2.h
-# ... your code here ...
+for key, value in enumerate(m2):
+    print('{:d}: {:s}'.format(key + 1, value))
 
 # 2.i
-# ... your code here ...
-#print(m3)
+m3 = [l for l in s2]
+print(m3)
 
 # 2.j
-# ... your code here ...
-#print(m4)
+m4 = [l for l in s2 if l != ' ']
+print(m4)
 
 # 2.k
-# ... your code here ...
-#print(set2)
+set2 = {l for l in s2 if l != ' '}
+print(set2)
 
 # 2.l
-# ... your code here ...
-#print(m5)
+m5 = [l for l in set2]
+m5.sort()
+print(m5)
 
 # 2.m
-# ... your code here ...
+d2 = {l: 0 for l in m5}
+for key, value in zip(d2.keys(), d2.values()):
+    print('{:s}: {:d}'.format(key, value))
 
 # 2.n
-# ... your code here ...
-#print(m6)
+with open('expenses.txt', 'rt', encoding='utf-8') as txt:
+    m6 = [l[:-1] for l in txt]
+print(m6)
 
 # 2.o
-# ... your code here ...
+for line in m6:
+    for ch in line:
+        if ch in d2.keys():
+            d2[ch] += 1
+for key, value in zip(d2.keys(), d2.values()):
+    print('{:s}: {:d}'.format(key, value))
