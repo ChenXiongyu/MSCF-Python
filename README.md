@@ -66,3 +66,7 @@ Maybe add some try except section to improve robustness of the program.
 #### h. multiple assignment
 
 * Is there a multiple assignment for a dict?
+
+### 3. Commodity Futures and Option Contracts
+
+* Many hard codes.
