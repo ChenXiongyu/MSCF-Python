@@ -70,3 +70,4 @@ Maybe add some try except section to improve robustness of the program.
 ### 3. Commodity Futures and Option Contracts
 
 * Many hard codes.
+* Add some annotations.

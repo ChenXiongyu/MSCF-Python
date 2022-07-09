@@ -1,6 +1,6 @@
 
 # File:       hw3_1_a.py
-# Author(s):  Xiongyu Chen
+# Author(s):  Xiongyu Chen, Brandon Bloebaum
 
 expenses = []
 txt = open('expenses.txt', 'rt', encoding='utf-8')

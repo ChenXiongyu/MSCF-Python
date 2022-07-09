@@ -1,13 +1,13 @@
 
 # File:      hw3_3.py
-# Author(s): Xiongyu Chen
+# Author(s): Xiongyu Chen, Brandon Bloebaum
 
-input = open('cme.20210709.c.pa2', 'rt', encoding='utf-8')
-output = open('CL_and_NG_expirations_and_settlements.txt', 'wt', encoding='utf-8')
+finput = open('cme.20210709.c.pa2', 'rt', encoding='utf-8')
+foutput = open('CL_and_NG_expirations_and_settlements.txt', 'wt', encoding='utf-8')
 
 
 def writeline(line):
-    output.write(line + '\n')
+    foutput.write(line + '\n')  # simplify the write line process
 
 
 writeline('{:<10s}{:<11s}{:<11s}{:<12s}{:<10s}{:<7s}'.format(
@@ -17,9 +17,10 @@ writeline('{:<10s}{:<11s}{:<11s}{:<12s}{:<10s}{:<7s}'.format(
 writeline('{:<10s}{:<11s}{:<11s}{:<12s}{:<10s}{:<7s}'.format(
     '-' * 7, '-' * 8, '-' * 8, '-' * 8, '-' * 7, '-' * 8))
 
-Gap = False
+Gap = False  # Judge if Type B has finished and Type 8 has started
 
-for line in input:
+# The cme span pa2 document shows that 6th character to 15th character are Commodity (Product) Code
+for line in finput:
     if line[0] == 'B' and 202109 <= int(line[18:24]) <= 202312:
         if line[5:18] == 'CL        FUT':
             writeline('{:<10s}{:4s}-{:6s}{:<11s}{:4s}-{:2s}-{:2s}'.format(
@@ -68,5 +69,5 @@ for line in input:
                         'NG', line[29:33], line[33:35], 'Put', 
                         int(line[47:54]) / 1e3, int(line[108:122]) / 1e4))
 
-input.close()
-output.close()
+finput.close()
+foutput.close()

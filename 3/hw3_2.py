@@ -1,6 +1,6 @@
 
 # File:      hw3_2.py
-# Author(s): Xiongyu Chen
+# Author(s): Xiongyu Chen, Brandon Bloebaum
 
 # 2.a
 s1 = "Choo Choo Ch'Boogie"
