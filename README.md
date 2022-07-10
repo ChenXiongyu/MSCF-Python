@@ -61,12 +61,13 @@ Maybe add some try except section to improve robustness of the program.
 
 #### d. tuple & sort
 
-* The code can be simplified maybe.
+* I use list type of data to sort, and then convert it into tuple.
 
 #### h. multiple assignment
 
-* Is there a multiple assignment for a dict?
+* dict.keys(), dict.values()
 
 ### 3. Commodity Futures and Option Contracts
 
-* Many hard codes.
+* Some hard codes.
+* Add some annotations.

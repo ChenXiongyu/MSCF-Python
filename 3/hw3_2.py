@@ -1,6 +1,6 @@
 
 # File:      hw3_2.py
-# Author(s): Xiongyu Chen
+# Author(s): Xiongyu Chen, Brandon Bloebaum
 
 # 2.a
 s1 = "Choo Choo Ch'Boogie"
@@ -33,8 +33,8 @@ d1 = {n + 1: s for n, s in enumerate(m2)}
 print(d1)
 
 # 2.h
-for key, value in enumerate(m2):
-    print('{:d}: {:s}'.format(key + 1, value))
+for key, value in zip(d1.keys(), d1.values()):
+    print('{:d}: {:s}'.format(key, value))
 
 # 2.i
 m3 = [l for l in s2]
