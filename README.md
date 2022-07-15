@@ -76,8 +76,12 @@ Maybe add some try except section to improve robustness of the program.
 
 ### 1. Function Definitions and Recursion
 
-c. get recursion limit
+#### c. get recursion limit
 
 * It seems like in Jupyter Book, the recursion number is initially set to 3000, and I cannot enlarge the limit using set recursion limit.
 * In the Python Terminal, it is 1000 in Windows 10 system, and it can be enlarged to at least 2000.
 * How to present scientific counting method for such a large integer?
+
+#### h. nth prime number
+
+* Can I call the previous function?
