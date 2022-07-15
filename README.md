@@ -85,3 +85,11 @@ Maybe add some try except section to improve robustness of the program.
 #### h. nth prime number
 
 * Can I call the previous function?
+
+#### p. square of matrix
+
+* It is not elementwise?
+
+#### q. determinants
+
+* Some matrix attribute functions are in linalg module in numpy
