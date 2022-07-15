@@ -86,6 +86,12 @@ Maybe add some try except section to improve robustness of the program.
 
 * Can I call the previous function?
 
+### 2. NumPy
+
+#### i. data type
+
+* dtype or type()?
+
 #### p. square of matrix
 
 * It is not elementwise?
@@ -93,3 +99,7 @@ Maybe add some try except section to improve robustness of the program.
 #### q. determinants
 
 * Some matrix attribute functions are in linalg module in numpy
+
+### Python for Data Analysis
+
+* What is the difference between int64 and int32?
