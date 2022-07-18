@@ -43,14 +43,16 @@ print(an3)
 an5 = an3.copy()[3:5, 3:5]
 print(an5)
 an5 *= 2.2
-print(an3)
-print(an5)
+print(an3)  # an3 has not changed
+print(an5)  # an5 has changed
 
 # i
 print(an3.shape)
 print(an3.ndim)
-print(type(an3))
-print(type(an3[0, 0]))
+print(type(an3))  # class numpy.ndarray
+# using "print(an3.dtype)", it shows float64
+
+print(type(an3[0, 0]))  # or using print(an3[0, 0].dtype)
 
 # j
 an3[[True, False, True, False, True], :] -= 1.1
@@ -75,7 +77,6 @@ print(np.sum(an3))
 print(np.mean(an3))
 print(np.var(an3))
 print(np.std(an3, ddof=1))
-
 
 
 def mean_val(l):
@@ -117,6 +118,7 @@ print(an3sqr)
 # q
 print(np.linalg.det(an3))
 print(np.linalg.det(an3trans))  # transpose does not change determinants
+
 # determinants of product of matrix equals to product of determinants
 print(np.linalg.det(an3sqr))  # square of determinant of an3
 

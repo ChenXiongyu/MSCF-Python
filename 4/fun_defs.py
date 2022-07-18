@@ -4,7 +4,7 @@
 # Date:       Jul 15, 2022
 
 import sys
-import decimal
+import decimal  # used to print large integer
 
 # a
 print('hello, fun_defs.py')
@@ -36,6 +36,8 @@ print('Scientific notation of factorial of 1997: {:.3e}'.format(fact_2_sci))
 
 # e
 def fibonacci_rec(n: int):
+    # when n == 0, it will be 0.
+    # from n >= 1, sequence: 1, 1, 2, 3, 5, ...
     if n > 1:
         return fibonacci_rec(n - 1) + fibonacci_rec(n - 2)
     elif n == 1:
