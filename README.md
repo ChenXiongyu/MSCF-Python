@@ -104,3 +104,17 @@ Maybe add some try except section to improve robustness of the program.
 ### Python for Data Analysis
 
 * Output can be different, int32 against int64 for example.
+
+## Homework 5
+
+### b. method for object
+
+* The raise does not match in instructions and code notations.
+
+### c. operator functions
+
+* Do I need to add all of the inequality function in the definition?
+
+### d. delete method
+
+* I do not change the code of Manager.py.

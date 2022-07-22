@@ -1,6 +1,6 @@
 
 # File:      hw5_1.py
-# Author(s):
+# Author(s): Xiongyu Chen
 
 from Employee3 import Employee
 from Manager import Manager
@@ -24,15 +24,15 @@ def print_emps(corp):
 
 print_emps(company)
 
-'''
+
 
 # 1.b
 
 for e in company:
-    # if e is a Manager
-        # give a 10% raise
-    # else
-        # give a 2% raise
+    if isinstance(e, Manager):
+        e.give_raise(10)
+    else:
+        e.give_raise(3)
 
 print_emps(company)
 
@@ -88,5 +88,3 @@ print('... temp job has completed.')
 
 print('After temp_job() has been completed,', Employee.get_num_existing(),
            'Employees currently exist.')
-
-'''

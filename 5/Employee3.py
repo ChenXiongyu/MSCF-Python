@@ -3,16 +3,35 @@
 
 class Employee:
     _num_created = 0    # initially 0 exist
+    _num_existing = 0    # initially 0 exist
     def __init__(self, name, id, rate):
         self._name = name
         self._id = id
         self._rate = rate
         Employee._num_created += 1
+        Employee._num_existing += 1
+    def __del__(self):
+        Employee._num_existing -= 1
     def __str__(self):
         return ('id: ' + str(self._id) +
                 ', name: ' + self._name +
                 ', salary: ' +
                 '{:.2f}'.format(self._rate))
+    def __eq__(self, other):
+        if self._rate == other._rate:
+            return True
+        else:
+            return False
+    def __ne__(self, other):
+        if self._rate != other._rate:
+            return True
+        else:
+            return False
+    def __lt__(self, other):
+        if self._rate < other._rate:
+            return True
+        else:
+            return False
     def give_raise(self, percent):
         self._rate *= 1.0 + percent / 100
     def set_name(self, new_name):
@@ -27,6 +46,8 @@ class Employee:
         return self._rate
     def get_num_created(self = None):
         return Employee._num_created
+    def get_num_existing(self = None):
+        return Employee._num_existing
 
 if __name__ == '__main__':
     john = Employee('John', 1, 60.50)
