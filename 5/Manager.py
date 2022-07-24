@@ -1,5 +1,6 @@
 
 # File: Manager.py
+# Author(s): Xiongyu Chen, Yuning Zheng, Hanyi Wang
 
 import Employee3 as emp  # Employee.py is a
                          # separate module

@@ -1,6 +1,6 @@
 
 # File:      hw5_1.py
-# Author(s): Xiongyu Chen
+# Author(s): Xiongyu Chen, Yuning Zheng, Hanyi Wang
 
 from Employee3 import Employee
 from Manager import Manager
@@ -32,7 +32,7 @@ for e in company:
     if isinstance(e, Manager):
         e.give_raise(10)
     else:
-        e.give_raise(3)
+        e.give_raise(3)  # 2% in comment of code, then change to "e.give_raise(2)"
 
 print_emps(company)
 
